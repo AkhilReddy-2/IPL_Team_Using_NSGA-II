@@ -1,0 +1,41 @@
+Salary Cap: The total salary cap for each franchise is generally around ₹95 crore.
+
+Total Players: Each squad can have a maximum of 25 players.
+
+Overseas Players: A maximum of 8 overseas players can be included in the squad, with only 4 allowed to play in any given match.
+
+Captain and Wicket-Keeper: Usually, a team can have one designated captain and one designated wicket-keeper. However, it is common to have multiple players who can fulfill these roles.
+
+a1 (Lower bound for pure batters + batting all-rounders): Generally, teams had at least 5-6 pure batters, and 1-2 batting all-rounders, so a lower bound could be around 6-8.
+
+a2 (Lower bound for pure bowlers + bowling all-rounders): Teams typically had about 4-5 pure bowlers and 1-2 bowling all-rounders, leading to a lower bound of about 5-7.
+
+m1 (Lower bound for pure batters): Most teams would have a minimum of 5 pure batters.
+
+m2 (Lower bound for pure bowlers): A lower bound for pure bowlers is often 4.
+
+m3 (Upper bound for all-rounders): Most teams would have around 3-5 all-rounders.
+
+n1 (Lower bound for star pure batters): At least 1-2 star pure batters would be expected in most squads.
+
+n2 (Lower bound for star pure bowlers): Similarly, teams often had 1-2 star pure bowlers.
+
+n3 (Lower bound for star all-rounders): Teams generally included 1 star all-rounder.
+
+
+Performance Comparison for Case I:
+| Algorithm   | NPS Avg.   | Time Avg.             | Time Std. Dev          | Time Max.              | Hypervolume Avg.        | Hypervolume Median       | Hypervolume Std. Dev   | Hypervolume Min.          | IGD Avg.                | IGD Median              | IGD Std. Dev            |
+|:------------|:-----------|:----------------------|:-----------------------|:-----------------------|:------------------------|:-------------------------|:-----------------------|:--------------------------|:------------------------|:------------------------|:------------------------|
+| BNSGA-II    | 94.4       | 28.809362602233886    | **1.1229290615118943** | 30.53904366493225      | **0.07274480432074296** | **0.061315728071767495** | 0.0251189603548228     | 0.04920356440254334       | **0.42992956653544906** | **0.37013278064154653** | 0.12087651207644633     |
+| INSGA-II    | 100.0      | 34.60327501296997     | 0.861325538719752      | **35.534964084625244** | 0.09352472407479814     | 0.06136927460336326      | 0.10426281347339796    | **0.0013787655369625926** | 0.6886615296782393      | 0.6390907700028133      | 0.09600278889664557     |
+| MNSGA-II    | **67.4**   | **26.33004560470581** | 0.12454411608707122    | 26.455530405044556     | 0.24391355038001516     | 0.23243800444651666      | 0.036596892472465954   | 0.2114826585554285        | 0.514714710530404       | 0.5118456611426618      | 0.027291454199093765    |
+| RNSGA-II    | 95.2       | 27.0053777217865      | 0.35951741563789724    | 27.582589387893677     | 0.4019997557368666      | 0.40057556820269014      | **0.1312916824418864** | 0.25277645554074213       | 0.7141426661213568      | 0.6978247050123039      | **0.15531051732496096** |
+
+Performance Comparison for Case II:
+| Algorithm   | NPS Avg.   | Time Avg.              | Time Std. Dev         | Time Max.             | Hypervolume Avg.       | Hypervolume Median     | Hypervolume Std. Dev   | Hypervolume Min.        | IGD Avg.               | IGD Median            | IGD Std. Dev            |
+|:------------|:-----------|:-----------------------|:----------------------|:----------------------|:-----------------------|:-----------------------|:-----------------------|:------------------------|:-----------------------|:----------------------|:------------------------|
+| BNSGA-II    | **56.4**   | 28.80066418647766      | 4.749206776877262     | 32.8437933921814      | 0.7100780816349305     | 0.71661747481485       | 0.027484193029027618   | 0.6820493675571317      | 0.9205784853275084     | 0.9120422347475481    | 0.042404275705346356    |
+| INSGA-II    | 65.0       | 32.973961210250856     | **9.990630704060681** | **38.85714268684387** | **0.5123276721088422** | **0.4901547513497785** | **0.2280843184709873** | **0.28821695594941504** | 0.9940203571367301     | 0.982494452877279     | **0.15478271620987719** |
+| MNSGA-II    | 98.0       | **27.966590785980223** | 4.111574729407478     | 31.268714666366577    | 0.6587383397291457     | 0.6531306689617674     | 0.09779007765546342    | 0.5421465766877313      | 0.9348561876855431     | 0.9152589461290472    | 0.056283061727292624    |
+| RNSGA-II    | 84.8       | 31.182191467285158     | 1.1514000308607446    | 32.95083737373352     | 0.658229740421416      | 0.6199807451802671     | 0.0806273205909516     | 0.5975477854140512      | **0.8894360212985608** | **0.885262805852389** | 0.05105365396410869     |
+
